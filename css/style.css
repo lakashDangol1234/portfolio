@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior:smooth;
+}
+
+
+@media only screen and (max-width:1150px){
+    #nav-linkedin-btn{
+        display: none !important;
+    }
+    #nav-logo{
+        font-size: 2.2rem;
+    }
+    
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+}
+
+.card:hover {
+  box-shadow: 0 5px 40px rgba(26, 29, 39, 0.15);
+  transition: all 200ms ease;
+}
+
+input{
+    box-shadow: none !important;
+}
+
+
+.footer-icons > a > i{
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.footer-icons > a > i:hover {
+    color:black !important;
+}
