@@ -31,7 +31,7 @@ html{
   transition: all 200ms ease;
 }
 
-input{
+input,textarea{
     box-shadow: none !important;
 }
 
