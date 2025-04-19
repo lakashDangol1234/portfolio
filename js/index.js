@@ -1,13 +1,39 @@
-const carouselReview = document.getElementById('carouselReviewDark');
+// review swiper
+var swiper = new Swiper(".swiper-review", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  autoplay: {
+      delay: 3500,
+      disableOnInteraction: false
+  },
+  slidesPerView: 3,
+  loop: true,
+  coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false,
+  },
+  pagination: {
+      el: ".swiper-pagination",
+  },
+  breakpoints: {
+      320: { // Mobile devies 320px
+          slidesPerView: 1,
+      },
+      640: {
+          slidesPerView: 1,
+      },
+      768: {
+          slidesPerView: 2,
+      },
+      1024: {
+          slidesPerView: 3,
+      }
 
-const carouselInstance = new bootstrap.Carousel(carouselReview
-  , {
-  interval: false, // Disable built-in auto-slide
-  wrap: true,      // Allow cycling back to the beginning
+
+  }
 });
-
-function autoSlide() {
-  carouselInstance.next(); // Move to the next slide
-}
-
-setInterval(autoSlide, 5000); // Change slide every 3 seconds

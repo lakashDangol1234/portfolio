@@ -15,6 +15,9 @@
     <!-- font css  -->
     <link rel="stylesheet" href="css/font.css">
 
+    <!-- Swiper JS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="css/utilis.css">
@@ -509,63 +512,60 @@
                     <h1 class="position-absolute text-uppercase text-danger">Clients Say</h1>
                 </div>
                 <div class="col-11">
-                    <div id="carouselReviewDark" class="carousel carousel-dark slide">
-                        <div class="carousel-indicators pt-3">
-                            <button type="button" data-bs-target="#carouselReviewDark" data-bs-slide-to="0"
-                                class="active" style="border-radius: 50%; height: 20px; width: 20px;"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselReviewDark" data-bs-slide-to="1"
-                                aria-label="Slide 2" style="border-radius: 50%; height: 20px; width: 20px;"></button>
-                            <button type="button" data-bs-target="#carouselReviewDark" data-bs-slide-to="2"
-                                aria-label="Slide 3" style="border-radius: 50%; height: 20px; width: 20px;"></button>
+                    <div class="swiper swiper-review">
+                        <div class="swiper-wrapper mb-5">
+
+                            <div class="swiper-slide bg-white p-4">
+                                <div class="profile d-flex align-items-center mb-3">
+                                    <i class="bi bi-person-circle" class="img-fluid"></i>
+                                    <h6 class="m-0 ms-2">Ashok Dangol</h6>
+                                </div>
+                                <p>
+                                    Lakash is great to work with.I will definitely hire him for future projects
+                                </p>
+
+                            </div>
+
+
+                            <div class="swiper-slide bg-white p-4">
+                                <div class="profile d-flex align-items-center mb-3">
+                                    <i class="bi bi-person-circle" class="img-fluid"></i>
+                                    <h6 class="m-0 ms-2">Niroj Kumar Shrestha</h6>
+                                </div>
+                                <p>
+                                    Lakash was very helpful. His communication was excellent and he did the job
+                                    thoroughly and quickly. I would not hesitate to use Lakash again for future
+                                    projects. Thank you!
+                                </p>
+                            </div>
+
+
+                            <div class="swiper-slide bg-white p-4">
+                                <div class="profile d-flex align-items-center mb-3">
+                                    <i class="bi bi-person-circle" class="img-fluid"></i>
+                                    <h6 class="m-0 ms-2">Bharat Chaudhary</h6>
+                                </div>
+                                <p>
+                                    Best Website designer
+                                </p>
+                            </div>
+
+                            
+                            <div class="swiper-slide bg-white p-4">
+                                <div class="profile d-flex align-items-center mb-3">
+                                    <i class="bi bi-person-circle" class="img-fluid"></i>
+                                    <h6 class="m-0 ms-2">Ramesh Dangol</h6>
+                                </div>
+                                <p>
+                                    Excellent Programmer
+                                </p>
+                            </div>
+
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="10000">
-                                <div style="height:420px;"></div>
-                                <div class="carousel-caption d-block" style="top:1.25rem;">
-                                    <i class="bi bi-quote text-primary mb-4 display-1"></i>
-                                    <h4 class="fw-light mb-4 fs-5">"Lakash was very helpful. His communication was
-                                        excellent
-                                        and
-                                        he did the job thoroughly and quickly. I would not hesitate to use Lakash again
-                                        for
-                                        future projects. Thank you!"</h4>
-                                    <h1 class="display-1"><i class="bi bi-person-circle" class="img-fluid"></i></h1>
-                                    <p>Niroj Kumar Shrestha</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item" data-bs-interval="2000">
-                                <div style="height:420px;"></div>
-                                <div class="carousel-caption d-block" style="top:1.25rem;">
-                                    <i class="bi bi-quote text-primary mb-4 display-1"></i>
-                                    <h4 class="fw-light mb-4 fs-5">"Lakash is great to work with.I will definitely hire
-                                        him
-                                        for future projects"</h4>
-                                    <h1 class="display-1"><i class="bi bi-person-circle" class="img-fluid"></i></h1>
-                                    <p>Ashok Dangol</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div style="height:420px;"></div>
-                                <div class="carousel-caption d-block" style="top:1.25rem;">
-                                    <i class="bi bi-quote text-primary mb-4 display-1"></i>
-                                    <h4 class="fw-light mb-4">"Best Website designer"</h4>
-                                    <h1 class="display-1"><i class="bi bi-person-circle" class="img-fluid"></i></h1>
-                                    <p>Bharat Chaudhary</p>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselReviewDark"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselReviewDark"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                        <div class="swiper-pagination"></div>
+
                     </div>
+
                 </div>
 
             </section>
@@ -669,6 +669,9 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
 
+    <!-- Swiper js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
     <!-- Custom JS  -->
     <!-- type handler  -->
@@ -683,6 +686,6 @@
     <!-- General  -->
     <script src="js/index.js"></script>
 </body>
-</body>
+
 
 </html>
