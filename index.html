@@ -7,7 +7,7 @@
     <title>Er. Lakash Dangol</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="icon" href="images/title icon/mypic.png" type="image/png">
+    <link rel="icon" href="images/title icon/mypic.png" type="image/png">
 
 
     <!-- bootstrap Icon  -->
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="css/utilis.css">
+    <link rel="stylesheet" href="css/dark_theme.css">
 </head>
 
 <body class="roboto-regular">
@@ -25,7 +26,7 @@
 
     <header>
         <nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-primary px-0 px-sm-5"
-            style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);" id="navbar">
+            style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); background-color:#6F826A;" id="navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <h1 class="m-0 display-5" id="nav-logo">
@@ -68,6 +69,9 @@
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
+                    <button class="btn text-white" id="toggleTheme">
+                        <i id="themeIcon" class="bi bi-moon-fill"></i>
+                    </button>
                 </div>
                 <a target="_blank" href="https://www.linkedin.com/in/lakash-dangol-170363194" type="button"
                     class="btn btn-outline-warning d-none d-lg-block " id="nav-linkedin-btn">Linkedin</a>
@@ -100,7 +104,7 @@
                 <div class="position-relative d-flex align-items-center justify-content-center">
                     <h1 class="display-1 text-uppercase text-white fw-bold"
                         style="-webkit-text-stroke: 2px #dee2e6; font-size: calc(1.625rem + 8.5vw);">About</h1>
-                    <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+                    <h1 class="position-absolute text-uppercase text-danger">About Me</h1>
                 </div>
 
                 <div class="col-md-4 col-11 mt-2">
@@ -139,7 +143,9 @@
                     </div>
                     <a target="_blank" href="https://www.linkedin.com/in/lakash-dangol-170363194"
                         class="btn btn-outline-primary me-4">Connect on LinkedIn</a>
-                    <a target="_blank" href="https://drive.google.com/file/d/1KGho9oqNyfn__3XF1Pcl2oUCt3H2g0AZ/view?usp=sharing" class="btn btn-outline-primary">Download CV</a>
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/1KGho9oqNyfn__3XF1Pcl2oUCt3H2g0AZ/view?usp=sharing"
+                        class="btn btn-outline-primary">Download CV</a>
                 </div>
             </section>
 
@@ -148,7 +154,7 @@
                 <div class="position-relative d-flex align-items-center justify-content-center">
                     <h1 class="display-1 text-uppercase text-white fw-bold"
                         style="-webkit-text-stroke: 2px #dee2e6; font-size: calc(1.625rem + 8.5vw);">Quality</h1>
-                    <h1 class="position-absolute text-uppercase text-primary">Education and Experience</h1>
+                    <h1 class="position-absolute text-uppercase text-danger">Education and Experience</h1>
                 </div>
 
                 <div class="col-md-5 col-11 mt-2">
@@ -220,7 +226,7 @@
                 <div class="position-relative d-flex align-items-center justify-content-center">
                     <h1 class="display-1 text-uppercase text-white fw-bold"
                         style="-webkit-text-stroke: 2px #dee2e6; font-size: calc(1.625rem + 8.5vw);">Skills</h1>
-                    <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+                    <h1 class="position-absolute text-uppercase text-danger">My Skills</h1>
                 </div>
                 <div class="col-md-5 col-11">
                     <div class="skill mb-4">
@@ -320,7 +326,7 @@
                 <div class="position-relative d-flex align-items-center justify-content-center">
                     <h1 class="display-1 text-uppercase text-white fw-bold"
                         style="-webkit-text-stroke: 2px #dee2e6; font-size: calc(1.625rem + 8.5vw);">Service</h1>
-                    <h1 class="position-absolute text-uppercase text-primary">My Services</h1>
+                    <h1 class="position-absolute text-uppercase text-danger">My Services</h1>
                 </div>
                 <div class="col-lg-4 col-md-5 col-11 text-center mb-3 px-4">
                     <div class="d-flex align-items-center justify-content-center mb-3">
@@ -367,7 +373,8 @@
                         <i class="bi bi-search service-icon bg-primary text-white me-3 fs-3"></i>
                         <h4 class="fw-bold m-0">SEO/ASO/Analyze</h4>
                     </div>
-                    <p class="text-secondary">Maximize your online visibility with targeted, high-quality content optimized for search engines.</p>
+                    <p class="text-secondary">Maximize your online visibility with targeted, high-quality content
+                        optimized for search engines.</p>
                 </div>
 
 
@@ -389,19 +396,22 @@
                 <div class="position-relative d-flex align-items-center justify-content-center">
                     <h1 class="display-1 text-uppercase text-white fw-bold"
                         style="-webkit-text-stroke: 2px #dee2e6; font-size: calc(1.625rem + 8.5vw);">Project</h1>
-                    <h1 class="position-absolute text-uppercase text-primary">My Work</h1>
+                    <h1 class="position-absolute text-uppercase text-danger">My Work</h1>
                 </div>
                 <div class="row align-items-center">
 
                     <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center mt-3">
                         <div class="card">
-                            <img src="images/project/school_website.png" class="card-img-top border-bottom border-1" alt="...">
+                            <img src="images/project/school_website.png" class="card-img-top border-bottom border-1"
+                                alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">School Website</h5>
                                 <small class="text-secondary"> June 5, 2022</small>
                                 <p class="card-text mt-2"> First Project in the School</p>
-                                <a target="_blank" href="https://github.com/lakashDangol1234/school" class="btn btn-primary me-3">View Code</a>
-                                <a target="_blank" href="https://lakashdangol1234.github.io/school/home/" class="btn btn-primary">Live Demo</a>
+                                <a target="_blank" href="https://github.com/lakashDangol1234/school"
+                                    class="btn btn-primary me-3">View Code</a>
+                                <a target="_blank" href="https://lakashdangol1234.github.io/school/home/"
+                                    class="btn btn-primary">Live Demo</a>
 
                             </div>
                         </div>
@@ -409,12 +419,13 @@
 
                     <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center mt-3">
                         <div class="card">
-                            <img src="images/project/lms.png" class="card-img-top border-bottom border-1" alt="..." >
+                            <img src="images/project/lms.png" class="card-img-top border-bottom border-1" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Library Management System</h5>
                                 <small class="text-secondary"> July 27, 2022</small>
                                 <p class="card-text mt-2">OJT Project After Class 10</p>
-                                <a target="_blank" href="https://github.com/lakashDangol1234/Library-Management-System" class="btn btn-primary me-3">View Code</a>
+                                <a target="_blank" href="https://github.com/lakashDangol1234/Library-Management-System"
+                                    class="btn btn-primary me-3">View Code</a>
                                 <a target="_blank" href="#" class="btn btn-primary invisible">Live Demo</a>
 
                             </div>
@@ -428,14 +439,15 @@
                                 <h5 class="card-title">Entrance Management System</h5>
                                 <small class="text-secondary">September 23, 2024</small>
                                 <p class="card-text mt-2">OJT Project After class 12</p>
-                                <a target="_blank" href="https://github.com/lakashDangol1234/Entrance-Management-System" class="btn btn-primary me-3">View Code</a>
+                                <a target="_blank" href="https://github.com/lakashDangol1234/Entrance-Management-System"
+                                    class="btn btn-primary me-3">View Code</a>
                                 <a target="_blank" href="#" class="btn btn-primary invisible">Live Demo</a>
 
                             </div>
                         </div>
                     </div>
 
-                
+
             </section>
 
 
@@ -444,7 +456,7 @@
                 <div class="position-relative d-flex align-items-center justify-content-center">
                     <h1 class="display-1 text-uppercase text-white fw-bold"
                         style="-webkit-text-stroke: 2px #dee2e6; font-size: calc(1.625rem + 8.5vw);">Portfolio</h1>
-                    <h1 class="position-absolute text-uppercase text-primary">Feature on</h1>
+                    <h1 class="position-absolute text-uppercase text-danger">Feature on</h1>
                 </div>
                 <div class="row align-items-center">
 
@@ -494,10 +506,10 @@
                 <div class="position-relative d-flex align-items-center justify-content-center">
                     <h1 class="display-1 text-uppercase text-white fw-bold"
                         style="-webkit-text-stroke: 2px #dee2e6; font-size: calc(1.625rem + 8.5vw);">Review</h1>
-                    <h1 class="position-absolute text-uppercase text-primary">Clients Say</h1>
+                    <h1 class="position-absolute text-uppercase text-danger">Clients Say</h1>
                 </div>
                 <div class="col-11">
-                    <div id="carouselReviewDark" class="carousel carousel-dark slide" >
+                    <div id="carouselReviewDark" class="carousel carousel-dark slide">
                         <div class="carousel-indicators pt-3">
                             <button type="button" data-bs-target="#carouselReviewDark" data-bs-slide-to="0"
                                 class="active" style="border-radius: 50%; height: 20px; width: 20px;"
@@ -512,7 +524,8 @@
                                 <div style="height:420px;"></div>
                                 <div class="carousel-caption d-block" style="top:1.25rem;">
                                     <i class="bi bi-quote text-primary mb-4 display-1"></i>
-                                    <h4 class="fw-light mb-4 fs-5">"Lakash was very helpful. His communication was excellent
+                                    <h4 class="fw-light mb-4 fs-5">"Lakash was very helpful. His communication was
+                                        excellent
                                         and
                                         he did the job thoroughly and quickly. I would not hesitate to use Lakash again
                                         for
@@ -525,7 +538,8 @@
                                 <div style="height:420px;"></div>
                                 <div class="carousel-caption d-block" style="top:1.25rem;">
                                     <i class="bi bi-quote text-primary mb-4 display-1"></i>
-                                    <h4 class="fw-light mb-4 fs-5">"Lakash is great to work with.I will definitely hire him
+                                    <h4 class="fw-light mb-4 fs-5">"Lakash is great to work with.I will definitely hire
+                                        him
                                         for future projects"</h4>
                                     <h1 class="display-1"><i class="bi bi-person-circle" class="img-fluid"></i></h1>
                                     <p>Ashok Dangol</p>
@@ -561,7 +575,7 @@
                 <div class="position-relative d-flex align-items-center justify-content-center">
                     <h1 class="display-1 text-uppercase text-white fw-bold"
                         style="-webkit-text-stroke: 2px #dee2e6; font-size: calc(1.625rem + 8.5vw);">Contact</h1>
-                    <h1 class="position-absolute text-uppercase text-primary">Let's Grow Together</h1>
+                    <h1 class="position-absolute text-uppercase text-danger">Let's Grow Together</h1>
                 </div>
 
                 <div class="col-10">
@@ -621,14 +635,16 @@
                 <p class="text-white fw-bold fs-4">Connect with me:</p>
             </div>
             <div class="col-12 footer-icons">
-                <a target="_blank" href="https://www.linkedin.com/in/lakash-dangol-170363194"><i class="bi bi-linkedin fs-4 text-danger mx-2"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/lakash-dangol-170363194"><i
+                        class="bi bi-linkedin fs-4 text-danger mx-2"></i></a>
                 <a target="_blank" href="https://www.facebook.com/lakash.dangol/"><i
                         class="bi bi-facebook fs-4 text-danger mx-2"></i></a>
                 <a target="_blank" href="https://www.instagram.com/lakash.dangol/"><i
                         class="bi bi-instagram fs-4 text-danger mx-2"></i></a>
                 <a target="_blank" href="https://www.threads.net/@lakash.dangol"><i
                         class="bi bi-threads fs-4 text-danger mx-2"></i></a>
-                <a target="_blank" href="https://x.com/LakashDangol"><i class="bi bi-twitter-x fs-4 text-danger mx-2"></i></a>
+                <a target="_blank" href="https://x.com/LakashDangol"><i
+                        class="bi bi-twitter-x fs-4 text-danger mx-2"></i></a>
                 <a target="_blank" href="https://github.com/lakashdangol1234"><i
                         class="bi bi-github fs-4 text-danger mx-2"></i></a>
             </div>
@@ -660,6 +676,10 @@
 
     <!-- Validation & Email -->
     <script src="js/validation_emailHandler.js"></script>
+
+    <!-- Toggle Theme  -->
+    <script src="js/toggle_theme.js"></script>
+
     <!-- General  -->
     <script src="js/index.js"></script>
 </body>

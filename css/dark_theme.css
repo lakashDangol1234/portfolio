@@ -1,0 +1,77 @@
+/* Dark Theme: Apply when body has .theme-dark */
+.theme-dark {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+}
+
+/* Override Bootstrap background utility classes */
+.theme-dark .bg-white,
+.theme-dark .bg-light,
+.theme-dark .bg-body,
+.theme-dark .bg-transparent {
+  background-color: #1e1e1e !important;
+}
+
+/* Override Bootstrap text color utility classes */
+.theme-dark .text-dark,
+.theme-dark .text-body,
+.theme-dark .text-black {
+  color: #e0e0e0 !important;
+}
+
+/* General container backgrounds */
+.theme-dark .card,
+.theme-dark .navbar,
+.theme-dark .dropdown-menu,
+.theme-dark .modal-content {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0 !important;
+}
+
+/* Borders */
+.theme-dark .border,
+.theme-dark .card,
+.theme-dark .table,
+.theme-dark hr {
+  border-color: #444 !important;
+}
+
+/* Input fields */
+.theme-dark input,
+.theme-dark textarea,
+.theme-dark select {
+  background-color: #2a2a2a !important;
+  color: #e0e0e0 !important;
+  border-color: #555 !important;
+}
+
+/* Placeholder text */
+.theme-dark ::placeholder {
+  color: #aaa !important;
+}
+
+/* Buttons (you can customize further per class if needed) */
+.theme-dark .btn-light {
+  background-color: #2c2c2c !important;
+  color: #f0f0f0 !important;
+  border-color: #444 !important;
+}
+
+.theme-dark .btn-outline-dark {
+  border-color: #888 !important;
+  color: #ddd !important;
+}
+
+/* Links */
+.theme-dark a {
+  color: #90caf9;
+}
+
+/* Tables */
+.theme-dark .table {
+  color: #e0e0e0;
+  background-color: #1e1e1e;
+}
+.theme-dark .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #2a2a2a;
+}
